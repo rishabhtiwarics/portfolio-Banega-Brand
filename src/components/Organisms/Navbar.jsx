@@ -62,6 +62,7 @@ export default function Navbar() {
             <button
               onClick={openInquiry}
               className="bb-nav-cta ms-3"
+              style={{ border: 'none' }}
             >
               Enquire Now
             </button>
@@ -95,6 +96,7 @@ export default function Navbar() {
         <button
           className="bb-drawer-link bb-drawer-fire"
           onClick={openInquiry}
+          style={{ border: 'none', background: 'none', textAlign: 'left', padding: 0, width: '100%' }}
         >
           Enquire Now →
         </button>
