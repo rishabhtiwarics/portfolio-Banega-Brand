@@ -5,10 +5,10 @@ export default function About() {
   const ref2 = useReveal();
 
   return (
-    <section className="bb-bg-ground" id="bbAbout">
+    <section className="bb-bg-ground" id="bbAbout" style={{ overflowX: 'hidden' }}>
       <div className="container">
-        <div className="row align-items-center g-5">
-          <div className="col-lg-5 bb-reveal" ref={ref1}>
+        <div className="row align-items-center g-4 g-lg-5">
+          <div className="col-12 col-lg-5 bb-reveal" ref={ref1}>
             <div className="bb-about-img-wrap">
               <img
                 src="https://banegabrand.com/public/frontend/assets/img/supplier-b2b.png"
@@ -26,7 +26,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="col-lg-7 bb-reveal"
+            className="col-12 col-lg-7 bb-reveal"
             ref={ref2}
             style={{ transitionDelay: "0.15s" }}
           >
@@ -66,14 +66,14 @@ export default function About() {
                   sub: "Manufacturing Network",
                 },
               ].map((item) => (
-                <div className="col-sm-6" key={item.title}>
+                <div className="col-6" key={item.title}>
                   <div className="bb-card p-3">
-                    <div className="d-flex align-items-center gap-3">
-                      <div className="bb-icon-box bb-icon-box-sm">
+                    <div className="d-flex align-items-center gap-2">
+                      <div className="bb-icon-box bb-icon-box-sm flex-shrink-0">
                         <i className={`fas ${item.icon}`} />
                       </div>
                       <div>
-                        <div className="fw-bold bb-text-ink">{item.title}</div>
+                        <div className="fw-bold bb-text-ink" style={{ fontSize: '0.88rem' }}>{item.title}</div>
                         <div className="bb-text-muted">{item.sub}</div>
                       </div>
                     </div>

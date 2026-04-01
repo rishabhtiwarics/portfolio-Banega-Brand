@@ -53,10 +53,10 @@ export default function Contact() {
   const submit = () => alert("Thank you! We will get back to you soon.");
 
   return (
-    <section className="bb-bg-ground" id="bbContact">
+    <section className="bb-bg-ground" id="bbContact" style={{ overflowX: 'hidden' }}>
       <div className="container">
-        <div className="row mb-5 bb-reveal" ref={headerRef}>
-          <div className="col-lg-6">
+        <div className="row mb-4 mb-lg-5 bb-reveal" ref={headerRef}>
+          <div className="col-12 col-lg-6">
             <span className="bb-eyebrow">Contact</span>
             <h2>
               Let's Build Something{" "}
@@ -70,8 +70,8 @@ export default function Contact() {
             </p>
           </div>
         </div>
-        <div className="row g-5">
-          <div className="col-lg-5 bb-reveal" ref={leftRef}>
+        <div className="row g-4 g-lg-5">
+          <div className="col-12 col-lg-5 bb-reveal" ref={leftRef}>
             <div className="d-flex flex-column gap-4">
               {contactLinks.map((l) => (
                 <a
@@ -91,7 +91,7 @@ export default function Contact() {
                 </a>
               ))}
             </div>
-            <div className="d-flex gap-3 mt-5">
+            <div className="d-flex gap-3 mt-4 mt-lg-5">
               {socialLinks.map((s) => (
                 <a
                   key={s.icon}
@@ -107,13 +107,13 @@ export default function Contact() {
           </div>
 
           <div
-            className="col-lg-7 bb-reveal"
+            className="col-12 col-lg-7 bb-reveal"
             ref={rightRef}
             style={{ transitionDelay: "0.15s" }}
           >
             <div className="bb-card p-4">
               <div className="row g-3">
-                <div className="col-sm-6">
+                <div className="col-12 col-sm-6">
                   <input
                     className="bb-field"
                     type="text"
@@ -123,7 +123,7 @@ export default function Contact() {
                     onChange={handle}
                   />
                 </div>
-                <div className="col-sm-6">
+                <div className="col-12 col-sm-6">
                   <input
                     className="bb-field"
                     type="email"

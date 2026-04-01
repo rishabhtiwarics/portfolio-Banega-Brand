@@ -1134,6 +1134,15 @@ section {
 
 /* MOBILE */
 @media (max-width: 991px) {
+  .bb-about-img-wrap {
+  max-width: 100%;
+  overflow: hidden;
+}
+ 
+.bb-about-stamp {
+  right: 12px;   /* keep stamp inside viewport */
+  bottom: 16px;
+}
   .bb-nav-links {
     display: none !important;
   }
@@ -1161,7 +1170,7 @@ section {
     transform: none !important;
   }
   .bb-photo-stamp {
-    left: 50%;
+    left: 37%;
     transform: translateX(-50%);
     bottom: -14px;
   }

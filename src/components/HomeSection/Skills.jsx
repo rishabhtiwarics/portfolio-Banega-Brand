@@ -21,7 +21,7 @@ export default function Skills() {
   const statsRef = useReveal();
 
   return (
-    <section className="bb-bg-ground" id="bbSkills">
+    <section className="bb-bg-ground" id="bbSkills" style={{ overflowX: 'hidden' }}>
       <div className="container">
         <div className="row mb-5 bb-reveal" ref={headerRef}>
           <div className="col-lg-6">
@@ -37,8 +37,8 @@ export default function Skills() {
             </p>
           </div>
         </div>
-        <div className="row g-5">
-          <div className="col-lg-6 bb-reveal" ref={barsRef}>
+        <div className="row g-4 g-lg-5">
+          <div className="col-12 col-lg-6 bb-reveal" ref={barsRef}>
             {skills.map((s) => (
               <div className="bb-skill-row" key={s.label}>
                 <div className="bb-skill-header">
@@ -52,7 +52,7 @@ export default function Skills() {
             ))}
           </div>
           <div
-            className="col-lg-6 bb-reveal"
+            className="col-12 col-lg-6 bb-reveal"
             ref={statsRef}
             style={{ transitionDelay: "0.15s" }}
           >
